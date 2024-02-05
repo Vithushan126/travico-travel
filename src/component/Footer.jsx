@@ -2,7 +2,9 @@ import React from "react";
 import { footerAPI } from "../data/travigodata";
 
 const Footer = ({ footerAPI: { titles, links, sociallinks } }) => {
-  console.log(footerAPI);
+  const handleClick = (linkUrl) => {
+    window.open(linkUrl, "_blank"); // Open the URL in a new tab
+  };
   return (
     <>
       <footer className="bg-gradient-to-b  from-emerald-400 to-green-300 pt-24 pb-7">
@@ -41,6 +43,7 @@ const Footer = ({ footerAPI: { titles, links, sociallinks } }) => {
                   key={i}
                   src={val.icon}
                   alt="social/icon"
+                  onClick={() => handleClick(val.url)}
                   className="w-5 h-5"
                 />
               ))}

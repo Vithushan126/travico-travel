@@ -27,6 +27,9 @@ import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import twitter from "../images/twitter.svg";
 import youtube from "../images/youtube.svg";
+import messenger from "../images/messanger.svg";
+
+import linkedln from "../images/linkedln.svg";
 
 import banner from "../images/banner.webp";
 
@@ -151,10 +154,25 @@ export const footerAPI = {
       { link: "Accesbility" },
     ],
   ],
+
   sociallinks: [
-    { icon: facebook },
-    { icon: instagram },
-    { icon: twitter },
-    { icon: youtube },
+    {
+      icon: linkedln,
+      url: "https://www.linkedin.com/in/vairamuththu-vithushan-9404a424b/",
+    },
+    {
+      icon: facebook,
+      url: "https://www.facebook.com/vithu.vithu.50596?mibextid=ZbWKwL",
+    },
+    { icon: messenger, url: "https://m.me/vithu.vithu.50596" },
+    {
+      icon: instagram,
+      url: "https://www.instagram.com/vithu.vithu.50596?igsh=MWpnbXY2OXVIN3J6Mw==",
+    },
+    { icon: twitter, url: "https://www.twitter.com" },
+    {
+      icon: youtube,
+      url: "https://youtube.com/@vithuvithu2875?si=ep4MaST1y0kLXMe4",
+    },
   ],
 };
